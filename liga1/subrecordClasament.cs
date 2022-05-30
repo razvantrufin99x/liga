@@ -17,16 +17,16 @@ namespace liga.liga1
 		public int pen;
 		public int pct;
 		public subrecordClasament() { }
-		public int sqlm() { return 0; }
-		public int sqlv() { return 0; }
-		public int sqle() { return 0; }
-		public int sqli() { return 0; }
-		public int sqlgm() { return 0; }
-		public int sqlgp() { return 0; }
-		public int calcgol() { return 0; }
-		public int calcadv() { return 0; }
+		public void sqlm() { m=0 ; }
+		public void sqlv() { v=0 ; }
+		public void sqle() {  e=0; }
+		public void sqli() {  i=0; }
+		public void sqlgm() {  gm=0; }
+		public void sqlgp() {  gp=0; }
+		public void calcgol() { gol=gp-gp ; }
+		public void calcadv() {   }
 		public void addpenalizari(int p) { this.pen = p; }
-		public int calcpct() { return 0; }
+		public void calcpct() {  pct = this.v * 3 + this.e; }
 
 	}
 }
