@@ -13,8 +13,15 @@ namespace liga.liga1
 		public int sezonul;
 		public DateTime datastart;
 		public DateTime datatfinal;
+		
 		public List<meci> meciuri = new List<meci>();
 		public liga() { }
+		
+		public clasament SezonRegular = new clasament();
+		public clasament InjumatatirePuncte = new clasament();
+		public clasament PlayOFF = new clasament();
+		public clasament PlayOut = new clasament();
+
 		public liga(string pdenumire, int pcodunicliga, string ptara, int psezonul) 
 		{ 
 			denumire = pdenumire;

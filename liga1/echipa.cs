@@ -10,6 +10,8 @@ namespace liga.liga1
 		public int codunicechipa;
 		public string denumire;
 		public echipa() { }
+		public List<meci> meciurileechipei = new List<meci> { };
+
 		public echipa(string psigla, int pcodunicechipa, string pdenumire) 
 		{ 
 			sigla = psigla;

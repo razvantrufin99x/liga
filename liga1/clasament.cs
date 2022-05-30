@@ -6,11 +6,8 @@ namespace liga.liga1
 {
 	public class clasament
 	{
-		public List<recordClasament> echipe = new List<recordClasament>();
-		public int codunicliga;
+		public List<recordClasament> inregistrari = new List<recordClasament>();
 		public clasament() { }
-		public clasament(int pcodunicliga) { 
-			codunicliga = pcodunicliga;
-		}
+		
 	}
 }

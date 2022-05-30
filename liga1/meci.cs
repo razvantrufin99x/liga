@@ -15,18 +15,28 @@ namespace liga.liga1
 		public int codunicmeci;
 		public int etapa;
 		public string partea;
+
 		public int ggpr;
 		public int gopr;
 		public int ggpen;
 		public int gopen;
+
+		public DateTime data;
+
+		public List<eveniment> evenimente = new List<eveniment>();
+		public void addEveniment(eveniment ev) 
+		{
+			evenimente.Add(ev);
+		}
 		public meci() { }
-		public meci(echipa peg, echipa peo, int pcodunicmeci, int petapa, string ppartea) 
+		public meci(echipa peg, echipa peo, int pcodunicmeci, int petapa, string ppartea, DateTime pdata) 
 		{
 			eg = peg;
 			eo= peo;
 			codunicmeci = pcodunicmeci;
 			etapa = petapa;
 			partea = ppartea;
+			data = pdata;
 		}
 	}
 }

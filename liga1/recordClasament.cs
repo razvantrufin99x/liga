@@ -8,14 +8,13 @@ namespace liga.liga1
 	{
 		public int codunicechipa;
 		public int locul;
-		public int codunicliga;
-		public subrecordClasament totalSRC = new subrecordClasament();
-		public subrecordClasament acasa = new subrecordClasament();
-		public subrecordClasament deplasare = new subrecordClasament();
+		public subrecordClasament totalSRC = new subrecordClasament('T');
+		public subrecordClasament acasa = new subrecordClasament('A');
+		public subrecordClasament deplasare = new subrecordClasament('D');
 		public recordClasament() { }
-		public recordClasament(int pcodunicechipa, int pcodunicliga) {
+		public recordClasament(int pcodunicechipa) {
 			codunicechipa = pcodunicechipa;
-			codunicliga = pcodunicliga;
+			
 		}
 	}
 }

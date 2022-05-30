@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>liga.liga1</RootNamespace>
     <AssemblyName>liga1</AssemblyName>
-    <ProjectGuid>{}</ProjectGuid>
+    <ProjectGuid>{943DF8ED-CC12-42FE-ABCF-A813ECC9B0D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -36,12 +36,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="antrenor.cs" />
+    <Compile Include="app.cs" />
+    <Compile Include="arbitru.cs" />
+    <Compile Include="comentator.cs" />
     <Compile Include="echipa.cs" />
+    <Compile Include="eveniment.cs" />
+    <Compile Include="jucator.cs" />
     <Compile Include="meci.cs" />
     <Compile Include="liga.cs" />
     <Compile Include="clasament.cs" />
+    <Compile Include="persoana.cs" />
+    <Compile Include="spectator.cs" />
     <Compile Include="subrecordClasament.cs" />
     <Compile Include="recordClasament.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
